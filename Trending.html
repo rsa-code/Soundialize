@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="utf-8" />
+            <meta name="viewport" contenct="width=device-width, initial-scale=1.0" />
+
+            <link rel="stylesheet" href="trending.css">
+            <script src="trending.js"></script>
+
+            <title>Trending</title>
+
+            <link rel="icon" type="image/x-icon" href="img/soundializeicon.png">
+
+        </head>
+
+        <body>
+
+            <div class="navbar">
+                <nav>
+                    <ul>
+                        <li><a class="active" href="Perfil de lado.html" target="_blank"><img src="img/user.png" width="25" height="25"></a></li>
+                        <li><a href="dm.html" target="_blank"><img src="img/mail.png" width="25" height="25"></a></li>
+                        <li><a href="timeline.html" target="_blank"><img src="img/home.png" width="25" height="25"></a></li>
+                            
+                            <div class="badge-wrap">
+                        
+                        <li><a href="notif.html" target="_blank"><img src="img/notif.png" width="25" height="25"></a></li>
+                            
+                            <div class="badge-with-number">5</div>
+                            
+                            </div>
+                            
+                        <li><a href="Settings.html" target="_blank"><img src="img/settings.png" width="25" height="25"></a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="center-div">
+
+                <div id="trending-div">    
+                    <h2>TRENDING</h2>
+                </div>
+
+                <div id="albums-trend">    
+                    <button id="albums_button" class="botao1" onclick="albums_show()">ALBUMS</button>
+                </div>
+                
+                <div id="song-trend">
+                    <button id="songs_button" class="botao1" onclick="songs_show()">SONGS</button>
+                </div>
+                
+                <div id="artist-trend">
+                    <button id="artists_button" class="botao1" onclick="artists_show()">ARTISTS</button>
+                </div>
+
+<!-- select button display -->
+
+                <div id="select-display">
+                    <h1 id="select-text">select your trend...</h1><img id="pointer" src="img/pointer.png">
+                </div>
+
+<!-- trending songs display -->
+
+                <div id="song-display" hidden>
+                    
+                    <a href="https://open.spotify.com/track/2dHHgzDwk4BJdRwy9uXhTO?si=9c91ce67df57402d" target="_blank">
+                        <div id="album-div">    
+                            
+                                <div class="left" id="img-div"><h4>1</h4><img id=album-cover src="img/creepin.jpg"></div> 
+                                <div class="center" id="txt1-div"><h3>Creepin'</h3></div>
+                                <div class="right" id="txt2-div"><h3>Metro Boom, The Weeknd & 21 Savage</h3></div>
+                        </div>
+                    </a>
+
+                    <a href="https://open.spotify.com/track/1Qrg8KqiBpW07V7PNxwwwL?si=808e407006bd4c52" target="_blank">
+                        <div id="album-div">
+                            
+                                <div class="left" id="img-div"><h4>2</h4><img id=album-cover src="img/sos.png"></div>
+                                <div class="center" id="txt1-div"><h3>Kill Bill</h3></div>
+                                <div class="right" id="txt2-div"><h3>SZA</h3></div>
+                        </div>
+                    </a>
+
+                    <a href="https://open.spotify.com/track/3nqQXoyQOWXiESFLlDF1hG?si=0ee204cccf8c402c" target="_blank">
+                        <div id="album-div">
+                            
+                                <div class="left" id="img-div"><h4>3</h4><img id=album-cover src="img/unholy.png"></div>
+                                <div class="center" id="txt1-div"><h3>Unholy</h3></div>
+                                <div class="right" id="txt2-div"><h3>Sam Smith, Kim Petras</h3></div>
+                        </div>
+                    </a>
+
+                    <a href="https://open.spotify.com/track/0V3wPSX9ygBnCm8psDIegu?si=9d2e7a4ae9fb446c" target="_blank">
+                        <div id="album-div">
+                            
+                                <div class="left" id="img-div"><h4>4</h4><img id=album-cover src="img/anti-hero.jfif"></div>
+                                <div class="center" id="txt1-div"><h3>Anti-Hero</h3></div>
+                                <div class="right" id="txt2-div"><h3>Taylor Swift</h3></div>
+                        </div>
+                    </a>
+
+                    <a href="https://open.spotify.com/track/0WtM2NBVQNNJLh6scP13H8?si=e6c2513a6e3141fc" target="_blank">
+                        <div id="album-div">
+                            
+                                <div class="left" id="img-div"><h4>5</h4><img id=album-cover src="img/calm-down.jpg"></div>
+                                <div class="center" id="txt1-div"><h3>Calm Down</h3></div>
+                                <div class="right" id="txt2-div"><h3>Rema, Selena Gomez</h3></div>
+                        </div>
+                    </a>
+
+                    <a href="https://open.spotify.com/track/4LRPiXqCikLlN15c3yImP7?si=70262466690a4d00" target="_blank">
+                        <div id="album-div">
+                            
+                                <div class="left" id="img-div"><h4>6</h4><img id=album-cover src="img/as-it-was.png"></div>
+                                <div class="center" id="txt1-div"><h3>As It Was</h3></div>
+                                <div class="right" id="txt2-div"><h3>Harry Styles</h3></div>
+                        </div>
+                    </a>
+
+                    <a href="https://open.spotify.com/track/0QHEIqNKsMoOY5urbzN48u?si=d02a09502cb6430c" target="_blank">
+                        <div id="album-div">
+                            
+                                <div class="left" id="img-div"><h4>7</h4><img id=album-cover src="img/made-you-look.png"></div>
+                                <div class="center" id="txt1-div"><h3>Made You Look</h3></div>
+                                <div class="right" id="txt2-div"><h3>Meghan Trainor</h3></div>
+                        </div>
+                    </a>
+
+                    <a href="https://open.spotify.com/track/1xzi1Jcr7mEi9K2RfzLOqS?si=025d7c0f9f8d47a7" target="_blank">
+                        <div id="album-div">
+                            
+                                <div class="left" id="img-div"><h4>8</h4><img id=album-cover src="img/cuff-it.jfif"></div>
+                                <div class="center" id="txt1-div"><h3>CUFF IT</h3></div>
+                                <div class="right" id="txt2-div"><h3>Beyoncé</h3></div>
+                        </div>
+                    </a>
+
+                    <a href="https://open.spotify.com/track/2mnXxnrX5vCGolNkaFvVeM?si=86f16e2031154649" target="_blank">
+                        <div id="album-div">
+                            
+                                <div class="left" id="img-div"><h4>9</h4><img id=album-cover src="img/la-jumpa.jfif"></div>
+                                <div class="center" id="txt1-div"><h3>La Jumpa</h3></div>
+                                <div class="right" id="txt2-div"><h3>Arcángel, Bad Bunny</h3></div>
+                        </div>
+                    </a>
+
+                    <a href="https://open.spotify.com/track/5Y35SjAfXjjG0sFQ3KOxmm?si=2e6cc467321c4da2" target="_blank">
+                        <div id="album-div">
+                            
+                                <div class="left" id="img-div"><h4>10</h4><img id=album-cover src="img/sos.png"></div>
+                                <div class="center" id="txt1-div"><h3>Nobody Gets Me</h3></div>
+                                <div class="right" id="txt2-div"><h3>SZA</h3></div>
+                        </div>
+                    </a>
+                        
+                </div>
+
+<!-- trending artists display -->
+
+                <div id="artists_display" hidden>
+
+                    <h1 id="artists-header">December Top Artists</h1>
+
+                <a href="https://open.spotify.com/artist/1Xyo4u8uXC1ZmMpatF05PJ?si=4db183a74f774fd6" target="_blank">   
+                    <div id="artists-div">    
+                            
+                            <div class="left" id="img-div"><h4>1</h4><img id=artist-pic src="img/the-weeknd.jfif"></div> 
+                            <div class="center" id="name-div"><h3 id="name">The Weeknd</h3></div>
+                    </div>
+                </a>
+
+                <a href="https://open.spotify.com/artist/06HL4z0CvFAxyc27GXpf02?si=bba9a169db2d4f66" target="_blank">    
+                    <div id="artists-div">
+                        
+                            <div class="left" id="img-div"><h4>2</h4><img id=artist-pic src="img/taylor.jfif"></div>
+                            <div class="center" id="name-div"><h3 id="name">Taylor Swift</h3></div>
+                    </div>
+                </a>
+
+                <a href="https://open.spotify.com/artist/1uNFoZAHBGtllmzznpCI3s?si=0e2a222e606941f4" target="_blank">
+                    <div id="artists-div">
+                        
+                            <div class="left" id="img-div"><h4>3</h4><img id=artist-pic src="img/justin.jfif"></div>
+                            <div class="center" id="name-div"><h3 id="name">Justin Bieber</h3></div>
+                    </div>
+                </a>
+
+                <a href="https://open.spotify.com/artist/6eUKZXaKkcviH0Ku9w2n3V?si=25308cf7016542b2" target="_blank">
+                    <div id="artists-div">
+                        
+                            <div class="left" id="img-div"><h4>4</h4><img id=artist-pic src="img/ed.jfif"></div>
+                            <div class="center" id="name-div"><h3 id="name">Ed Sheeran</h3></div>
+                    </div>
+                </a>
+
+                <a href="https://open.spotify.com/artist/66CXWjxzNUsdJxJ2JdwvnR?si=79f5d829408f4679" target="_blank">
+                    <div id="artists-div">
+                        
+                            <div class="left" id="img-div"><h4>5</h4><img id=artist-pic src="img/ariana.jfif"></div>
+                            <div class="center" id="name-div"><h3 id="name">Ariana Grande</h3></div>
+                    </div>
+                </a>
+
+                <a href="https://open.spotify.com/artist/2wY79sveU1sp5g7SokKOiI?si=d5bfe5c1d9ab4cd6" target="_blank">
+                    <div id="artists-div">
+                        
+                            <div class="left" id="img-div"><h4>6</h4><img id=artist-pic src="img/sam.jfif"></div>
+                            <div class="center" id="name-div"><h3 id="name">Sam Smith</h3></div>
+                    </div>
+                </a>
+
+                <a href="https://open.spotify.com/artist/3TVXtAsR1Inumwj472S9r4?si=47658243c2ce4c13" target="_blank">
+                    <div id="artists-div">
+                        
+                            <div class="left" id="img-div"><h4>7</h4><img id=artist-pic src="img/drake.jfif"></div>
+                            <div class="center" id="name-div"><h3 id="name">Drake</h3></div>
+                    </div>
+                </a>
+
+                <a href="https://open.spotify.com/artist/5pKCCKE2ajJHZ9KAiaK11H?si=03f6498e2ae74967" target="_blank">
+                    <div id="artists-div">
+                        
+                            <div class="left" id="img-div"><h4>8</h4><img id=artist-pic src="img/rihanna.jfif"></div>
+                            <div class="center" id="name-div"><h3 id="name">Rihanna</h3></div>
+                    </div>
+                </a>
+
+                <a href="https://open.spotify.com/artist/1Cs0zKBU1kc0i8ypK3B9ai?si=0a780ef4032a4a38" target="_blank">
+                    <div id="artists-div">
+                        
+                            <div class="left" id="img-div"><h4>9</h4><img id=artist-pic src="img/david.jfif"></div>
+                            <div class="center" id="name-div"><h3 id="name">David Guetta</h3></div>
+                    </div>
+                </a>
+
+                <a href="https://open.spotify.com/artist/4iHNK0tOyZPYnBU7nGAgpQ?si=fed5738acb184289" target="_blank">
+                    <div id="artists-div">
+                        
+                            <div class="left" id="img-div"><h4>10</h4><img id=artist-pic src="img/mariah.jfif"></div>
+                            <div class="center" id="name-div"><h3 id="name">Mariah Carey</h3></div>
+                    </div>
+                </a>
+
+                </div>
+
+<!-- trending albums display -->
+
+                
+                <div id="albums_display" hidden>
+
+                    <h1 id="albums-header">Most Streamed Albums</h1>
+
+                <a href="https://open.spotify.com/album/3RQQmkQEvNCY4prGKE6oc5?si=_cnjANB8SMmFY2i1IyKbGQ" target="_blank">
+                    <div id="album-div">    
+                        
+                        <div class="left" id="img-div"><h4>1</h4><img id=album-cover src="img/verano-sin.jfif"></div> 
+                        <div class="center" id="txt1-div"><h3>Un Verano Sin Ti</h3></div>
+                        <div class="right" id="txt2-div"><h3>Bad Bunny</h3></div>
+                    </div>
+                </a>
+
+                <a href="https://open.spotify.com/album/5r36AJ6VOJtp00oxSkBZ5h?si=wKboC7bMRdC0m81mk3p9XQ" target="_blank">
+                    <div id="album-div">
+                    
+                        <div class="left" id="img-div"><h4>2</h4><img id=album-cover src="img/harry-house.jfif"></div>
+                        <div class="center" id="txt1-div"><h3>Harry's House</h3></div>
+                        <div class="right" id="txt2-div"><h3>Harry Styles</h3></div>
+                    </div>
+                </a>
+
+                <a href="https://open.spotify.com/album/6s84u2TUpR3wdUv4NgKA2j?si=AVCEzOGBQfOiYqzK0SNa4w" target="_blank">
+                    <div id="album-div">
+                        
+                            <div class="left" id="img-div"><h4>3</h4><img id=album-cover src="img/sour.jfif"></div>
+                            <div class="center" id="txt1-div"><h3>SOUR</h3></div>
+                            <div class="right" id="txt2-div"><h3>Olivia Rodrigo</h3></div>
+                    </div>
+                </a>
+
+                <a href="https://open.spotify.com/album/32iAEBstCjauDhyKpGjTuq?si=IU1OkATJTqS69P0XWhjotg" target="_blank">
+                    <div id="album-div">
+                        
+                            <div class="left" id="img-div"><h4>4</h4><img id=album-cover src="img/equal.jfif"></div>
+                            <div class="center" id="txt1-div"><h3>=</h3></div>
+                            <div class="right" id="txt2-div"><h3>Ed Sheeran</h3></div>
+                    </div>
+                </a>
+
+                <a href="https://open.spotify.com/album/1nAQbHeOWTfQzbOoFrvndW?si=R25AWKlaQFmbw7_B7WqVkA" target="_blank">
+                    <div id="album-div">
+                        
+                            <div class="left" id="img-div"><h4>5</h4><img id=album-cover src="img/planet.jfif"></div>
+                            <div class="center" id="txt1-div"><h3>Planet Her</h3></div>
+                            <div class="right" id="txt2-div"><h3>Doja Cat</h3></div>
+                    </div>
+                </a>
+
+            </div>
+
+
+        </body>
+        
+    </html>

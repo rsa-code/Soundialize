@@ -1,0 +1,136 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap);
+
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgb(132, 132, 132) 0%, rgb(253, 160, 88) 50%, rgba(238,238,238,1) 100%);
+}
+
+.navbar {
+  width: 60%;
+  height: 100%;
+  margin-top: 47px;
+  margin-left: 295px;
+  margin-bottom: 40px;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav {
+  background: #DBA39A;
+  border-radius: 15px;
+  padding: 10px 100px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+  margin-bottom: 550px;
+}
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  font-size: 32px;
+  padding: 0 10px;
+  margin: 0 20px;
+  cursor: pointer;
+  position: relative;
+}
+nav ul li:after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #000000;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+nav ul li:hover::after {
+  width: 100%;
+}
+
+
+img {
+  width: 25px;
+  height: 25px;
+}
+
+.badge-wrap {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+}
+
+.badge-with-number {
+  position: absolute;
+  color: #fff;
+  background-color: #CF0A0A;
+  font-size: 11px;
+  padding: 3px 10px;
+  border-radius: 8px;
+  top: -5px;
+  right: -5px;
+}
+
+.center-div
+{
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  margin: auto;
+  top: 100px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 55%;
+  height: 500px;
+  background-color: #EEEEEE;
+  border-top:    3px solid rgb(0, 0, 0);
+  border-right:  3px solid rgb(0, 0, 0); 
+  border-left: 3px solid rgb(0, 0, 0);
+  border-radius: 9px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+
+.wrapper {
+  margin-top: 30px;
+  background-color: rgba(220, 95, 0,.64);
+  width: 80%;
+  padding: 30px;
+  border-radius: 30px;
+  margin-bottom: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  margin-top: 0;
+  color: black;
+  margin-bottom: 4px;
+}
+
+.wrapper img {
+  width: 50px;
+  height: 50px;
+  border-radius: 160px;
+  border: 2px solid black;
+  margin-right: 16px;
+}
+
+p {
+  font-size: 13px;
+  line-height: 16px;
+  margin: 0;
+  color: black;
+}

@@ -1,0 +1,335 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap);
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgb(132, 132, 132) 0%, rgb(253, 160, 88) 50%, rgba(238,238,238,1) 100%);
+}
+
+.navbar {
+  width: 60%;
+  height: 100%;
+  margin-top: 47px;
+  margin-left: 295px;
+  margin-bottom: 40px;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav {
+  background: #DBA39A;
+  border-radius: 15px;
+  padding: 10px 100px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+  margin-bottom: 550px;
+}
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  font-size: 32px;
+  padding: 0 10px;
+  margin: 0 20px;
+  cursor: pointer;
+  position: relative;
+}
+nav ul li:after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #000000;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+nav ul li:hover::after {
+  width: 100%;
+}
+
+
+img {
+  width: 25px;
+  height: 25px;
+}
+
+.badge-wrap {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+}
+
+.badge-with-number {
+  position: absolute;
+  color: #fff;
+  background-color: #CF0A0A;
+  font-size: 11px;
+  padding: 3px 10px;
+  border-radius: 8px;
+  top: -5px;
+  right: -5px;
+}
+
+.center-div
+{
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  margin: auto;
+  top: 100px;
+  right: 20px;
+  bottom: 0;
+  left: 0;
+  width: 54%;
+  height: 500px;
+  background-color: #EEEEEE;
+    border-top:    3px solid rgb(0, 0, 0);
+  border-right:  3px solid rgb(0, 0, 0); 
+  border-left: 3px solid rgb(0, 0, 0);
+  border-radius: 9px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+
+.wrapper {
+  position: relative;
+  margin-top: -600px;
+  width: 100%;
+  height: 800px;
+}
+
+.container {
+  border: 1px solid black;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  height: 75%;
+  background-color: #FFF;
+  transform: translate(-50%, -50%);
+}
+.container .left {
+  float: left;
+  width: 37.6%;
+  height: 100%;
+  border: 1px solid black;
+}
+.container .left .top {
+  position: relative;
+  width: 100%;
+  height: 96px;
+  padding: 29px;
+  padding-left: 110px;
+  background-color: rgba(220, 95, 0,0.3);
+}
+.container .left .top:after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  display: block;
+  width: 80%;
+  height: 1px;
+  content: "";
+  background-color: white;
+  transform: translate(-50%, 0);
+}
+.container .left input {
+  float: left;
+  width: 188px;
+  height: 42px;
+  padding: 0 15px;
+  border: 1px solid black;
+  background-color: #EEEEEE;
+  font-weight: 400;
+}
+.container .left input:focus {
+  outline: none;
+}
+.container .left .people {
+  list-style: none;
+  margin-left: -1px;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  width: 100%;
+  height: 50px;
+}
+.container .left .people .person {
+  position: relative;
+  float: right;
+  width: 100%;
+  padding: 17px 10% 16px;
+  cursor: pointer;
+  background-color: rgba(220, 95, 0,0.3);
+}
+.container .left .people .person:after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  display: block;
+  width: 100%;
+  height: 1px;
+  content: "";
+  background-color: black;
+  transform: translate(-50%, 0);
+}
+.container .left .people .person img {
+  float: left;
+  width: 50px;
+  height: 50px;
+  margin-right: 12px;
+  border: 2px solid black;
+  border-radius: 50%;
+}
+.container .left .people .person .name {
+  font-size: 14px;
+  line-height: 22px;
+  color: black;
+  font-weight: 600;
+}
+.container .left .people .person .time {
+  font-size: 14px;
+  position: absolute;
+  top: 16px;
+  right: 10%;
+  padding: 0 0 5px 5px;
+  color: white;
+  background-color: rgba(220, 95, 0,0);
+}
+.container .left .people .person .preview {
+  font-size: 14px;
+  display: inline-block;
+  overflow: hidden !important;
+  width: 80%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: grey;
+}
+.container .left .people .person.active, .container .left .people .person:hover {
+  margin-top: -1px;
+  margin-left: -1px;
+  padding-top: 17px;
+  border: 0;
+  background-color: rgbA(207, 10, 10,0.5);
+  width: 100%;
+  padding-left: 10%;
+}
+.container .left .people .person.active span, .container .left .people .person:hover span {
+  color: black;
+  background: transparent;
+}
+.container .left .people .person.active:after, .container .left .people .person:hover:after {
+  display: none;
+}
+.container .right {
+  position: relative;
+  float: left;
+  width: 62.4%;
+  height: 100%;
+}
+.container .right .top {
+  width: 100%;
+  height: 55px;
+  padding: 15px 29px;
+  background-color: lightgray;
+  border-bottom: 1px solid black;
+}
+.container .right .top span .name {
+  color: black;
+  font-weight: 600;
+}
+.container .right .chat {
+  position: relative;
+  display: none;
+  overflow: hidden;
+  padding: 0 35px 92px;
+  border-color: white;
+  height: calc(100% - 48px);
+  justify-content: flex-end;
+  flex-direction: column;
+}
+.container .right .chat.active-chat {
+  display: block;
+  display: flex;
+}
+
+.container .right .write {
+  position: absolute;
+  bottom: 29px;
+  left: 30px;
+  height: 42px;
+  padding-left: 8px;
+  border: 1px solid darkgrey;
+  background-color: #eceff1;
+  width: 90%;
+  border-radius: 10px;
+}
+.container .right .write input {
+  font-size: 16px;
+  float: left;
+  width: 550px;
+  height: 40px;
+  padding: 0 10px;
+  color: blacks;
+  border: 0;
+  outline: none;
+  background-color: #eceff1;
+  font-weight: 400;
+}
+.container .right .bubble {
+  font-size: 16px;
+  position: relative;
+  display: inline-block;
+  clear: both;
+  margin-bottom: 8px;
+  padding: 13px 14px;
+  vertical-align: top;
+  border-radius: 5px;
+}
+.container .right .bubble.you {
+  float: left;
+  color: white;
+  background-color: rgb(206, 119, 119);
+  align-self: flex-start;
+}
+.container .right .bubble.me {
+  float: right;
+  color: black;
+  background-color: lightgray;
+  align-self: flex-end;
+}
+.container .right .conversation-start {
+  position: relative;
+  width: 100%;
+  margin-bottom: 27px;
+  text-align: center;
+}
+.container .right .conversation-start span {
+  font-size: 14px;
+  display: inline-block;
+  color: grey;
+}
+.container .right .conversation-start span:before, .container .right .conversation-start span:after {
+  position: absolute;
+  top: 10px;
+  display: inline-block;
+  width: 30%;
+  height: 1px;
+  content: "";
+  background-color: white;
+}
+.container .right .conversation-start span:before {
+  left: 0;
+}
+.container .right .conversation-start span:after {
+  right: 0;
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+}

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="utf-8" />
+            <meta name="viewport" contenct="width=device-width, initial-scale=1.0" />
+
+            <link rel="stylesheet" href="settings.CSS">
+            <script src="settings.js"></script>
+
+            <title>Settings</title>
+
+            <link rel="icon" type="image/x-icon" href="img/soundializeicon.png">
+
+        </head>
+
+        <body>
+
+                <!-- div principal \\settings\\ -->
+
+                <div id="settings-container">
+
+                        <h2>Settings</h2>
+
+                        <div id="settings-show">
+                            <table>
+                                <tr><button id="settin_show1btn" class="botao1" onclick="settin_show1()">Security and account access <img id="seta" src="img/seta.png"></button></tr><br>
+                                <tr><button id="settin_show2btn" class="botao1" onclick="settin_show2()">Privacy and safety <img id="seta" src="img/seta.png"></button></tr><br>
+                                <tr><button id="settin_show3btn" class="botao1" onclick="settin_show3()">Notifications <img id="seta" src="img/seta.png"></button></tr><br>
+                                <tr><button id="settin_show4btn" class="botao1" onclick="settin_show4()">Accessibility, display, and languages <img id="seta" src="img/seta.png"></button></tr><br>
+                                <tr><button id="settin_show5btn" class="botao1" onclick="settin_show5()">Deactivate your account <img id="seta" src="img/seta.png"></button></tr><br>
+                            </table>
+                        </div>
+
+                        <div id="home-img-div"><a href="timeline.html"><img src="home.png" id="home-img"></a></div>
+
+                </div>
+
+                <!-- sub-div lateral direita -->
+                <!-- sub-div security -->
+
+                <div id="right-container">
+
+                    <div id="security-div" hidden>
+
+                        <h2>Security and account access</h2>
+                        <h5>Manage your account's security and keep track of your account's usage including apps that you have connected to your account.</h5>
+
+                        <table>
+                            <tr><button class="botao3" onclick="settin_security1()">Security </button></tr><br>
+                            <tr><button class="botao3" onclick="settin_security2()">Apps and sessions</button></tr><br>
+                            <tr><button class="botao3" onclick="settin_security3()">Connected accounts</button></tr><br>
+                        </table>
+
+                    </div>
+                    
+
+                    <!-- sub-div privacy -->
+                    <!-- PART I -->
+
+                    <div id="privacy-div" hidden>
+
+                        <div id="soundialize-activity-div">
+                        
+                            <h2>Privacy and safety</h2>
+                            <h5>Manage what informations you see and share on Soundialize.</h5>
+
+
+                            <h3>Your Soundialize activity</h3>
+
+                                <table>
+                                    <tr><button class="botao3" onclick="settin_activity1()">Audience and tagging</button></tr><br>
+                                    <tr><button class="botao3" onclick="settin_activity2()">Your posts</button></tr><br>
+                                    <tr><button class="botao3" onclick="settin_activity3()">Content you see</button></tr><br>
+                                    <tr><button class="botao3" onclick="settin_activity4()">Mute and block</button></tr><br>
+                                    <tr><button class="botao3" onclick="settin_activity5()">Direct messages</button></tr><br>
+                                    <tr><button class="botao3" onclick="settin_activity6()">Discoverability and contacts</button></tr><br>
+                                </table>
+                                <br>
+                                <hr>
+                        </div>
+                        
+
+                        <!-- PART II -->
+
+                        <div id="data-sharing-div">
+                            
+                            <h2>Data sharing and personalization</h2>
+                                
+                                <table>
+                                    <tr><button class="botao3" onclick="settin_data1()">Ads preferences</button></tr><br>
+                                    <tr><button class="botao3" onclick="settin_data2()">Cookie preferences</button></tr><br>
+                                    <tr><button class="botao3" onclick="settin_data3()">Inferred identity</button></tr><br>
+                                    <tr><button class="botao3" onclick="settin_data4()">Data sharing with business partners</button></tr><br>
+                                    <tr><button class="botao3" onclick="settin_data5()">Location informations</button></tr><br>
+                                </table>
+                                <br>
+                                <hr>
+                        </div>
+                        
+
+                        <!-- PART III -->
+
+                        <div id="more-about-privacy-div">
+                            
+                            <h2>Learn more about privacy on Soundialize</h2>
+                                
+                                <table>
+                                    <tr><button class="botao3" onclick="settin_about1()">Privacy center</button></tr><br>
+                                    <tr><button class="botao3" onclick="settin_about2()">Privacy policy</button></tr><br>
+                                    <tr><button class="botao3" onclick="settin_about3()">Contact us</button></tr><br>
+                                </table>
+
+                        </div>
+
+                    </div>
+
+                    <!-- sub-div notifications -->
+
+                    <div id="notifications-div" hidden>
+
+                        <h2>Notifications</h2>
+                        <h5>Select the kinds of notifications you get about your activities, interests and recommendations.</h5>
+
+                            <table>
+                                <tr><button class="botao3" onclick="settin_notifications1()">Filters</button></tr><br>
+                                <tr><button class="botao3" onclick="settin_notifications2()">Preferences</button></tr><br>
+                            </table>
+
+                    </div>
+
+                    <!-- sub-div accessibility -->
+
+                    <div id="accessibility-div" hidden>
+
+                        <h2>Accessibility, display and language</h2>
+                        <h5>Manage how Soundialize content is displayed to you.</h5>
+
+                            <table>
+                                <tr><button class="botao3" onclick="settin_access1()">Accessibility</button></tr><br>
+                                <tr><button class="botao3" onclick="settin_access2()">Display</button></tr><br>
+                                <tr><button class="botao3" onclick="settin_access3()">Languages</button></tr><br>
+                                <tr><button class="botao3" onclick="settin_access4()">Data usage</button></tr><br>
+                            </table>
+
+                    </div>
+
+                    <!-- sub-div deactivate -->
+
+                    <div id="deactivate-div" hidden>
+
+                        <h2>Deactivate your account</h2>
+                        <h5>Find out how you can deactivate your account.</h5>
+
+                        <p>You're about to start the process of deactivating your Soundialize account. 
+                        Your display name, @username, and public profile will no longer be viewable on this platform.</p>
+
+                        <h2>Additional info</h2>
+
+                        <p>You can restore your Soundialize account if it was accidentally or wrongfully deactivated for up to 30 days after deactivation.</p>
+                        
+                        <br>
+                        
+                        <p>To use your current username or email address with a different Soundialize account, change them before you deactivate this account.</p>
+                        <br>
+                        <hr>
+
+                        <button class="botao2" onclick="deactivatepage()">Deactivate</button>
+                    </div>
+
+                    <!-- deactivate div button -->
+
+                    <div id="deactivate-part" hidden>
+
+                        <h2>Confirm your password</h2>
+                        <h5>Complete your deactivation request by entering the password associated with your account.</h5>
+
+                        <div id="pass">
+                            
+                            <input type="password" class="password-input" placeholder="Password">
+                        
+                        </div>
+
+                        <hr>
+
+                        <div id="button-deactivate">
+                            
+                            <a id="deactivate-button" href="loginsite.html"><button class="deactivatebtn1">Deactivate</button></a>
+
+                        </div>
+
+                    </div>
+
+                    <div id="empty1">
+
+                        <p id="tiny-note">© Soundialize, Inc.</p>
+                    
+                    </div>
+
+                </div>
+
+        </body>
+        
+    </html>
